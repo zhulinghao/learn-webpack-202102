@@ -1,8 +1,7 @@
 // 操作 DOM 元素，把 content 显示到网页上
-function show(content) {
-  window.document.getElementById('app').innerText = 'Hello,' + content;
-}
+export default function show() {
+  const contentDom = document.createElement('div')
+  contentDom.className = 'content'
 
-// 通过 CommonJS 规范导出 show 函数
-// module.exports = show;
-export default show
+  window.document.getElementById('app').appendChild(contentDom)
+}

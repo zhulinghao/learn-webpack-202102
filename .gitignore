@@ -1,5 +1,5 @@
 /node_modules
 /dist
-/build
 
 *lock.json
+.DS_Store

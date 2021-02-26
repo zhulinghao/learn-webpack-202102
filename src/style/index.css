@@ -1,20 +1,22 @@
-body {
-  background-color: #f7f7f7;
-  color: mediumturquoise;
-  font-weight: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html, body {
+  height: 100%;
 }
 
 #app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#app .content {
   height: 300px;
   width: 300px;
-  background: url(../image/p1.png);
+  background: url(@/image/p1.png);
   opacity: 0.4;
   transition: 0.3s all;
 }
 
-#app:hover {
+#app .content:hover {
   opacity: 1;
 }
